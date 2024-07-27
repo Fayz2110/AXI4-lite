@@ -1,0 +1,1816 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Jul 22 21:06:21 2024
+# Process ID: 14100
+# Current directory: C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17288 C:\Users\Fayz\OneDrive\Desktop\SV_PRACTICE\AXI4-LITE\AXI4-LITE.xpr
+# Log file: C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/vivado.log
+# Journal file: C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE\vivado.jou
+#-----------------------------------------------------------
+start_guopopen_project C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/2018.2/data/ip'opopen_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:24 . Memory (MB): peak = 859.684 ; gain = 142.930
+update_compile_order -fileset sources_create_bd_design "design_1"
+Wrote  : <C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd> 
+create_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 890.430 ; gain = 5.316
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_uartlite:2.0 axi_uartlite_0
+create_bd_cell: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 902.035 ; gain = 7.211
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_uartlite_0/s_axi_aclk]
+endgroup
+save_bd_design
+Wrote  : <C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'AXI_4_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AXI_4_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI4_master.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI4_master
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI4_slave.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI4_slave
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI_4_top
+ERROR: [VRFC 10-40] timing control in always_comb/always_latch/always_ff is not allowed [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:65]
+ERROR: [VRFC 10-2787] module AXI_4_top ignored due to previous errors [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:23]
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'AXI_4_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AXI_4_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI4_master.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI4_master
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI4_slave.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI4_slave
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI_4_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 920.723 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9c750d5e06b442a69a620626f1ad1eb3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot AXI_4_top_behav xil_defaultlib.AXI_4_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port m_ARADDR [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:44]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port m_RDATA [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:47]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port s_ARADDR [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:56]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port s_RDATA [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:59]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.AXI4_master
+Compiling module xil_defaultlib.AXI4_slave
+Compiling module xil_defaultlib.AXI_4_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot AXI_4_top_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim/xsim.dir/AXI_4_top_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Jul 22 21:53:30 2024...
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:19 . Memory (MB): peak = 920.723 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '20' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "AXI_4_top_behav -key {Behavioral:sim_1:Functional:AXI_4_top} -tclbatch {AXI_4_top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source AXI_4_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 938.941 ; gain = 14.016
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'AXI_4_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:33 . Memory (MB): peak = 938.941 ; gain = 18.219
+create_bd_design "design_2"
+Wrote  : <C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd> 
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 blk_mem_gen_0
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+create_bd_cell: Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 1188.078 ; gain = 237.668
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_crossbar:2.1 axi_crossbar_0
+endgroup
+delete_bd_objs [get_bd_cells axi_crossbar_0]
+delete_bd_objs [get_bd_cells blk_mem_gen_0]
+open_bd_design {C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+make_bd_pins_external  [get_bd_pins axi_uartlite_0/s_axi_aresetn]
+endgroup
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins axi_uartlite_0/S_AXI]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_bram_ctrl:4.0 axi_bram_ctrl_0
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] design_1_axi_bram_ctrl_0_0: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] design_1_axi_bram_ctrl_0_0: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+endgroup
+delete_bd_objs [get_bd_nets s_axi_aclk_0_1] [get_bd_nets s_axi_aresetn_0_1] [get_bd_intf_nets S_AXI_0_1] [get_bd_cells axi_uartlite_0]
+delete_bd_objs [get_bd_intf_ports S_AXI_0]
+delete_bd_objs [get_bd_ports s_axi_aclk_0]
+delete_bd_objs [get_bd_ports s_axi_aresetn_0]
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/s_axi_aclk]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/s_axi_aresetn]
+endgroup
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins axi_bram_ctrl_0/S_AXI]
+endgroup
+generate_target all [get_files  C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd]
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.0-1] /axi_bram_ctrl_0: PORT /axi_bram_ctrl_0/BRAM_PORTA is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.0-1] /axi_bram_ctrl_0: PORT /axi_bram_ctrl_0/BRAM_PORTB is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+Wrote  : <C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+Exporting to file C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+catch { config_ip_cache -export [get_ips -all design_1_axi_bram_ctrl_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 2 design_1_axi_bram_ctrl_0_0_synth_1
+[Mon Jul 22 22:06:39 2024] Launched design_1_axi_bram_ctrl_0_0_synth_1...
+Run output will be captured here: C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.runs/design_1_axi_bram_ctrl_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.ip_user_files -ipstatic_source_dir C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.cache/compile_simlib/modelsim} {questa=C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.cache/compile_simlib/questa} {riviera=C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.cache/compile_simlib/riviera} {activehdl=C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd]
+set_property synth_checkpoint_mode None [get_files  C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd]
+generate_target all [get_files  C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+VHDL Output written to : C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+Exporting to file C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+export_ip_user_files -of_objects [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.ip_user_files -ipstatic_source_dir C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.cache/compile_simlib/modelsim} {questa=C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.cache/compile_simlib/questa} {riviera=C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.cache/compile_simlib/riviera} {activehdl=C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+group_bd_cells hier_0 [get_bd_cells axi_bram_ctrl_0]
+validate_bd_design
+CRITICAL WARNING: [BD 41-1356] Address block </hier_0/axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+CRITICAL WARNING: [BD 41-1356] Address block </hier_0/axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.0-1] /hier_0/axi_bram_ctrl_0: PORT /hier_0/axi_bram_ctrl_0/BRAM_PORTA is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.0-1] /hier_0/axi_bram_ctrl_0: PORT /hier_0/axi_bram_ctrl_0/BRAM_PORTB is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+ungroup_bd_cells [get_bd_cells hier_0]
+startgroup
+set_property -dict [list CONFIG.SINGLE_PORT_BRAM {1}] [get_bd_cells axi_bram_ctrl_0]
+endgroup
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins axi_bram_ctrl_0/BRAM_PORTA]
+endgroup
+validate_bd_design
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+ERROR: [axi_bram_cntlr-1] Expects the parameter <CONFIG.READ_WRITE_MODE> of interface </BRAM_PORTA_0>, which is connected to </axi_bram_ctrl_0/BRAM_PORTA>, to have value <READ_WRITE>, but currently it is <WRITE_ONLY>.
+ERROR: [Common 17-39] 'send_msg_id' failed due to earlier errors.
+ERROR: [BD 41-1273] Error running post_propagate TCL procedure: ERROR: [Common 17-39] 'send_msg_id' failed due to earlier errors.
+    ::xilinx.com_ip_axi_bram_ctrl_4.0::post_propagate Line 83
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+generate_target all [get_files  C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+Wrote  : <C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+Exporting to file C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+export_ip_user_files -of_objects [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.ip_user_files -ipstatic_source_dir C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.cache/compile_simlib/modelsim} {questa=C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.cache/compile_simlib/questa} {riviera=C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.cache/compile_simlib/riviera} {activehdl=C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+open_bd_design {C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd}
+current_bd_design [get_bd_designs design_1]
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] design_1_axi_bram_ctrl_0_0: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] design_1_axi_bram_ctrl_0_0: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+startgroup
+set_property -dict [list CONFIG.PROTOCOL {AXI4LITE} CONFIG.ECC_TYPE {0}] [get_bd_cells axi_bram_ctrl_0]
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] design_1_axi_bram_ctrl_0_0: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] design_1_axi_bram_ctrl_0_0: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+endgroup
+startgroup
+endgroup
+save_bd_design
+Wrote  : <C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+make_wrapper -files [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd] -top
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'YES' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+ERROR: [axi_bram_cntlr-1] Expects the parameter <CONFIG.READ_WRITE_MODE> of interface </BRAM_PORTA_0>, which is connected to </axi_bram_ctrl_0/BRAM_PORTA>, to have value <READ_WRITE>, but currently it is <WRITE_ONLY>.
+ERROR: [Common 17-39] 'send_msg_id' failed due to earlier errors.
+ERROR: [BD 41-1273] Error running post_propagate TCL procedure: ERROR: [Common 17-39] 'send_msg_id' failed due to earlier errors.
+    ::xilinx.com_ip_axi_bram_ctrl_4.0::post_propagate Line 83
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+ERROR: [BD 41-237] Bus Interface property PROTOCOL does not match between /axi_bram_ctrl_0/S_AXI(AXI4LITE) and /S_AXI_0(AXI4)
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd 
+ERROR: [Common 17-39] 'make_wrapper' failed due to earlier errors.
+make_wrapper -files [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd] -top
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'YES' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+ERROR: [axi_bram_cntlr-1] Expects the parameter <CONFIG.READ_WRITE_MODE> of interface </BRAM_PORTA_0>, which is connected to </axi_bram_ctrl_0/BRAM_PORTA>, to have value <READ_WRITE>, but currently it is <WRITE_ONLY>.
+ERROR: [Common 17-39] 'send_msg_id' failed due to earlier errors.
+ERROR: [BD 41-1273] Error running post_propagate TCL procedure: ERROR: [Common 17-39] 'send_msg_id' failed due to earlier errors.
+    ::xilinx.com_ip_axi_bram_ctrl_4.0::post_propagate Line 83
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+ERROR: [BD 41-237] Bus Interface property PROTOCOL does not match between /axi_bram_ctrl_0/S_AXI(AXI4LITE) and /S_AXI_0(AXI4)
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd 
+ERROR: [Common 17-39] 'make_wrapper' failed due to earlier errors.
+startgroup
+endgroup
+startgroup
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/s_axi_wvalid]
+WARNING: [BD 41-1306] The connection to interface pin /axi_bram_ctrl_0/s_axi_wvalid is being overridden by the user. This pin will not be connected as a part of interface connection S_AXI
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/s_axi_wstrb]
+WARNING: [BD 41-1306] The connection to interface pin /axi_bram_ctrl_0/s_axi_wstrb is being overridden by the user. This pin will not be connected as a part of interface connection S_AXI
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/s_axi_wready]
+WARNING: [BD 41-1306] The connection to interface pin /axi_bram_ctrl_0/s_axi_wready is being overridden by the user. This pin will not be connected as a part of interface connection S_AXI
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/s_axi_wdata]
+WARNING: [BD 41-1306] The connection to interface pin /axi_bram_ctrl_0/s_axi_wdata is being overridden by the user. This pin will not be connected as a part of interface connection S_AXI
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/s_axi_rresp]
+WARNING: [BD 41-1306] The connection to interface pin /axi_bram_ctrl_0/s_axi_rresp is being overridden by the user. This pin will not be connected as a part of interface connection S_AXI
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/s_axi_bvalid]
+WARNING: [BD 41-1306] The connection to interface pin /axi_bram_ctrl_0/s_axi_bvalid is being overridden by the user. This pin will not be connected as a part of interface connection S_AXI
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/s_axi_bresp]
+WARNING: [BD 41-1306] The connection to interface pin /axi_bram_ctrl_0/s_axi_bresp is being overridden by the user. This pin will not be connected as a part of interface connection S_AXI
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/s_axi_bready]
+WARNING: [BD 41-1306] The connection to interface pin /axi_bram_ctrl_0/s_axi_bready is being overridden by the user. This pin will not be connected as a part of interface connection S_AXI
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/s_axi_awaddr]
+WARNING: [BD 41-1306] The connection to interface pin /axi_bram_ctrl_0/s_axi_awaddr is being overridden by the user. This pin will not be connected as a part of interface connection S_AXI
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/s_axi_awprot]
+WARNING: [BD 41-1306] The connection to interface pin /axi_bram_ctrl_0/s_axi_awprot is being overridden by the user. This pin will not be connected as a part of interface connection S_AXI
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/s_axi_awready]
+WARNING: [BD 41-1306] The connection to interface pin /axi_bram_ctrl_0/s_axi_awready is being overridden by the user. This pin will not be connected as a part of interface connection S_AXI
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/s_axi_awvalid]
+WARNING: [BD 41-1306] The connection to interface pin /axi_bram_ctrl_0/s_axi_awvalid is being overridden by the user. This pin will not be connected as a part of interface connection S_AXI
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/s_axi_arprot]
+WARNING: [BD 41-1306] The connection to interface pin /axi_bram_ctrl_0/s_axi_arprot is being overridden by the user. This pin will not be connected as a part of interface connection S_AXI
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/bram_addr_a]
+WARNING: [BD 41-1306] The connection to interface pin /axi_bram_ctrl_0/bram_addr_a is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTA
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/bram_clk_a]
+WARNING: [BD 41-1306] The connection to interface pin /axi_bram_ctrl_0/bram_clk_a is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTA
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/bram_wrdata_a]
+WARNING: [BD 41-1306] The connection to interface pin /axi_bram_ctrl_0/bram_wrdata_a is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTA
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/bram_en_a]
+WARNING: [BD 41-1306] The connection to interface pin /axi_bram_ctrl_0/bram_en_a is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTA
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/bram_rst_a]
+WARNING: [BD 41-1306] The connection to interface pin /axi_bram_ctrl_0/bram_rst_a is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTA
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/bram_we_a]
+WARNING: [BD 41-1306] The connection to interface pin /axi_bram_ctrl_0/bram_we_a is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTA
+endgroup
+save_bd_design
+Wrote  : <C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1371.848 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd}
+open_bd_design {C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd}
+open_bd_design {C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd}
+open_bd_design {C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd}
+current_bd_design [get_bd_designs design_1]
+open_bd_design {C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd}
+save_bd_design
+Wrote  : <C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd> 
+Wrote  : <C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/ui/bd_1fdbff51.ui> 
+close_bd_design [get_bd_designs design_2]
+generate_target Simulation [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd]
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'YES' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+ERROR: [axi_bram_cntlr-1] Expects the parameter <CONFIG.READ_WRITE_MODE> of interface </BRAM_PORTA_0>, which is connected to </axi_bram_ctrl_0/BRAM_PORTA>, to have value <READ_WRITE>, but currently it is <WRITE_ONLY>.
+ERROR: [Common 17-39] 'send_msg_id' failed due to earlier errors.
+ERROR: [BD 41-1273] Error running post_propagate TCL procedure: ERROR: [Common 17-39] 'send_msg_id' failed due to earlier errors.
+    ::xilinx.com_ip_axi_bram_ctrl_4.0::post_propagate Line 83
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+ERROR: [BD 41-237] Bus Interface property PROTOCOL does not match between /axi_bram_ctrl_0/S_AXI(AXI4LITE) and /S_AXI_0(AXI4)
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd 
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+export_ip_user_files -of_objects  [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd] -no_script -reset -force -quiet
+remove_files  C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd
+open_bd_design {C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd}
+Successfully read diagram <design_2> from BD file <C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd>
+open_bd_design {C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd}
+open_bd_design {C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd}
+open_bd_design {C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd}
+open_bd_design {C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_bram_ctrl:4.0 axi_bram_ctrl_0
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] design_2_axi_bram_ctrl_0_0: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] design_2_axi_bram_ctrl_0_0: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+endgroup
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins axi_bram_ctrl_0/S_AXI]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/s_axi_aclk]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/s_axi_aresetn]
+endgroup
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins axi_bram_ctrl_0/BRAM_PORTA]
+endgroup
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins axi_bram_ctrl_0/BRAM_PORTB]
+endgroup
+set_property synth_checkpoint_mode None [get_files  C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd]
+generate_target all [get_files  C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd]
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+ERROR: [axi_bram_cntlr-1] Port-A interface property <CONFIG.READ_WRITE_MODE> is not defined.
+ERROR: [Common 17-39] 'send_msg_id' failed due to earlier errors.
+ERROR: [BD 41-1273] Error running post_propagate TCL procedure: ERROR: [Common 17-39] 'send_msg_id' failed due to earlier errors.
+    ::xilinx.com_ip_axi_bram_ctrl_4.0::post_propagate Line 27
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+Wrote  : <C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd> 
+Wrote  : <C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/ui/bd_1fdbff51.ui> 
+VHDL Output written to : C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/synth/design_2.v
+VHDL Output written to : C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/sim/design_2.v
+VHDL Output written to : C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/hdl/design_2_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+Exporting to file C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/hw_handoff/design_2.hwh
+Generated Block Design Tcl file C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/hw_handoff/design_2_bd.tcl
+Generated Hardware Definition File C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/synth/design_2.hwdef
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] design_2_axi_bram_ctrl_0_0: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] design_2_axi_bram_ctrl_0_0: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+startgroup
+set_property -dict [list CONFIG.PROTOCOL {AXI4LITE} CONFIG.SINGLE_PORT_BRAM {1} CONFIG.ECC_TYPE {0}] [get_bd_cells axi_bram_ctrl_0]
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] design_2_axi_bram_ctrl_0_0: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] design_2_axi_bram_ctrl_0_0: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+delete_bd_objs [get_bd_intf_nets axi_bram_ctrl_0_BRAM_PORTB]
+endgroup
+delete_bd_objs [get_bd_intf_ports BRAM_PORTB_0]
+make_wrapper -files [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd] -top
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'YES' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+ERROR: [axi_bram_cntlr-1] Port-A interface property <CONFIG.READ_WRITE_MODE> is not defined.
+ERROR: [Common 17-39] 'send_msg_id' failed due to earlier errors.
+ERROR: [BD 41-1273] Error running post_propagate TCL procedure: ERROR: [Common 17-39] 'send_msg_id' failed due to earlier errors.
+    ::xilinx.com_ip_axi_bram_ctrl_4.0::post_propagate Line 79
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+ERROR: [BD 41-237] Bus Interface property PROTOCOL does not match between /axi_bram_ctrl_0/S_AXI(AXI4LITE) and /S_AXI_0(AXI4)
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd 
+ERROR: [Common 17-39] 'make_wrapper' failed due to earlier errors.
+startgroup
+endgroup
+make_wrapper -files [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd] -top
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'YES' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+ERROR: [axi_bram_cntlr-1] Port-A interface property <CONFIG.READ_WRITE_MODE> is not defined.
+ERROR: [Common 17-39] 'send_msg_id' failed due to earlier errors.
+ERROR: [BD 41-1273] Error running post_propagate TCL procedure: ERROR: [Common 17-39] 'send_msg_id' failed due to earlier errors.
+    ::xilinx.com_ip_axi_bram_ctrl_4.0::post_propagate Line 79
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+ERROR: [BD 41-237] Bus Interface property PROTOCOL does not match between /axi_bram_ctrl_0/S_AXI(AXI4LITE) and /S_AXI_0(AXI4)
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd 
+ERROR: [Common 17-39] 'make_wrapper' failed due to earlier errors.
+generate_target all [get_files  C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd]
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'YES' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+ERROR: [axi_bram_cntlr-1] Port-A interface property <CONFIG.READ_WRITE_MODE> is not defined.
+ERROR: [Common 17-39] 'send_msg_id' failed due to earlier errors.
+ERROR: [BD 41-1273] Error running post_propagate TCL procedure: ERROR: [Common 17-39] 'send_msg_id' failed due to earlier errors.
+    ::xilinx.com_ip_axi_bram_ctrl_4.0::post_propagate Line 79
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+ERROR: [BD 41-237] Bus Interface property PROTOCOL does not match between /axi_bram_ctrl_0/S_AXI(AXI4LITE) and /S_AXI_0(AXI4)
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd 
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+save_bd_design
+Wrote  : <C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd> 
+Wrote  : <C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/ui/bd_1fdbff51.ui> 
+generate_target Simulation [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd]
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'YES' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+ERROR: [axi_bram_cntlr-1] Port-A interface property <CONFIG.READ_WRITE_MODE> is not defined.
+ERROR: [Common 17-39] 'send_msg_id' failed due to earlier errors.
+ERROR: [BD 41-1273] Error running post_propagate TCL procedure: ERROR: [Common 17-39] 'send_msg_id' failed due to earlier errors.
+    ::xilinx.com_ip_axi_bram_ctrl_4.0::post_propagate Line 79
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+ERROR: [BD 41-237] Bus Interface property PROTOCOL does not match between /axi_bram_ctrl_0/S_AXI(AXI4LITE) and /S_AXI_0(AXI4)
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd 
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.READ_WRITE_MODE {READ_ONLY}] [get_bd_intf_ports BRAM_PORTA_0]
+save_bd_design
+Wrote  : <C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd> 
+Wrote  : <C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/ui/bd_1fdbff51.ui> 
+generate_target Simulation [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd]
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'YES' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+ERROR: [axi_bram_cntlr-1] Expects the parameter <CONFIG.READ_WRITE_MODE> of interface </BRAM_PORTA_0>, which is connected to </axi_bram_ctrl_0/BRAM_PORTA>, to have value <READ_WRITE>, but currently it is <READ_ONLY>.
+ERROR: [Common 17-39] 'send_msg_id' failed due to earlier errors.
+ERROR: [BD 41-1273] Error running post_propagate TCL procedure: ERROR: [Common 17-39] 'send_msg_id' failed due to earlier errors.
+    ::xilinx.com_ip_axi_bram_ctrl_4.0::post_propagate Line 83
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+ERROR: [BD 41-237] Bus Interface property PROTOCOL does not match between /axi_bram_ctrl_0/S_AXI(AXI4LITE) and /S_AXI_0(AXI4)
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd 
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+set_property -dict [list CONFIG.READ_WRITE_MODE {READ_WRITE}] [get_bd_intf_ports BRAM_PORTA_0]
+save_bd_design
+Wrote  : <C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd> 
+generate_target Simulation [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd]
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'YES' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+ERROR: [BD 41-237] Bus Interface property PROTOCOL does not match between /axi_bram_ctrl_0/S_AXI(AXI4LITE) and /S_AXI_0(AXI4)
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd 
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+save_bd_design
+Wrote  : <C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd> 
+Wrote  : <C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/ui/bd_1fdbff51.ui> 
+generate_target Simulation [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd]
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'YES' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+ERROR: [BD 41-237] Bus Interface property PROTOCOL does not match between /axi_bram_ctrl_0/S_AXI(AXI4LITE) and /S_AXI_0(AXI4)
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd 
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+startgroup
+endgroup
+set_property -dict [list CONFIG.ADDR_WIDTH {32}] [get_bd_intf_ports S_AXI_0]
+save_bd_design
+Wrote  : <C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd> 
+generate_target Simulation [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd]
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'YES' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+ERROR: [BD 41-237] Bus Interface property PROTOCOL does not match between /axi_bram_ctrl_0/S_AXI(AXI4LITE) and /S_AXI_0(AXI4)
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd 
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+save_bd_design
+Wrote  : <C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd> 
+generate_target Simulation [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd]
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'YES' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+ERROR: [BD 41-237] Bus Interface property PROTOCOL does not match between /axi_bram_ctrl_0/S_AXI(AXI4LITE) and /S_AXI_0(AXI4)
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd 
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+save_bd_design
+Wrote  : <C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd> 
+Wrote  : <C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/ui/bd_1fdbff51.ui> 
+generate_target Simulation [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd]
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'YES' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+ERROR: [BD 41-237] Bus Interface property PROTOCOL does not match between /axi_bram_ctrl_0/S_AXI(AXI4LITE) and /S_AXI_0(AXI4)
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd 
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+save_bd_design
+Wrote  : <C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd> 
+generate_target Simulation [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd]
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'YES' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+ERROR: [BD 41-237] Bus Interface property PROTOCOL does not match between /axi_bram_ctrl_0/S_AXI(AXI4LITE) and /S_AXI_0(AXI4)
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd 
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+save_bd_design
+Wrote  : <C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd> 
+generate_target Simulation [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd]
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'YES' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+ERROR: [BD 41-237] Bus Interface property PROTOCOL does not match between /axi_bram_ctrl_0/S_AXI(AXI4LITE) and /S_AXI_0(AXI4)
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd 
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+save_bd_design
+Wrote  : <C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd> 
+Wrote  : <C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/ui/bd_1fdbff51.ui> 
+set_property -dict [list CONFIG.MAX_BURST_LENGTH {1} CONFIG.SUPPORTS_NARROW_BURST {0} CONFIG.PROTOCOL {AXI4LITE}] [get_bd_intf_ports S_AXI_0]
+save_bd_design
+Wrote  : <C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd> 
+generate_target Simulation [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd]
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'NO' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+Wrote  : <C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd> 
+VHDL Output written to : C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/synth/design_2.v
+VHDL Output written to : C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/sim/design_2.v
+VHDL Output written to : C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/hdl/design_2_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+Exporting to file C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/hw_handoff/design_2.hwh
+Generated Block Design Tcl file C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/hw_handoff/design_2_bd.tcl
+Generated Hardware Definition File C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/synth/design_2.hwdef
+export_ip_user_files -of_objects [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd] -directory C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.ip_user_files -ipstatic_source_dir C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.cache/compile_simlib/modelsim} {questa=C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.cache/compile_simlib/questa} {riviera=C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.cache/compile_simlib/riviera} {activehdl=C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'AXI_4_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AXI_4_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.ip_user_files/bd/design_2/sim/design_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI4_master.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI4_master
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI_4_top
+"xvhdl --incr --relax -prj AXI_4_top_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.ip_user_files/bd/design_2/ip/design_2_axi_bram_ctrl_0_0/sim/design_2_axi_bram_ctrl_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_2_axi_bram_ctrl_0_0
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 1426.215 ; gain = 0.004
+INFO: [USF-XSim-69] 'compile' step finished in '11' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9c750d5e06b442a69a620626f1ad1eb3 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L axi_bram_ctrl_v4_0_14 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot AXI_4_top_behav xil_defaultlib.AXI_4_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-426] cannot find port s_axi_aresretn_0 on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:75]
+ERROR: [VRFC 10-426] cannot find port bram_rddata_a on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:73]
+ERROR: [VRFC 10-426] cannot find port s_axi_rvalid on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:72]
+ERROR: [VRFC 10-426] cannot find port s_axi_rready on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:71]
+ERROR: [VRFC 10-426] cannot find port s_axi_rdata on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:70]
+ERROR: [VRFC 10-426] cannot find port s_axi_arvalid on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:69]
+ERROR: [VRFC 10-426] cannot find port s_axi_arready on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:68]
+ERROR: [VRFC 10-426] cannot find port s_axi_araddr on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:67]
+ERROR: [VRFC 10-2063] Module <design_2_axi_bram_ctrl_0_0> not found while processing module instance <axi_bram_ctrl_0> [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.ip_user_files/bd/design_2/sim/design_2.v:128]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:17 . Memory (MB): peak = 1426.215 ; gain = 0.004
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'AXI_4_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AXI_4_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI4_master.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI4_master
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI_4_top
+"xvhdl --incr --relax -prj AXI_4_top_vhdl.prj"
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1426.824 ; gain = 0.242
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9c750d5e06b442a69a620626f1ad1eb3 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L axi_bram_ctrl_v4_0_14 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot AXI_4_top_behav xil_defaultlib.AXI_4_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-426] cannot find port s_axi_aresretn on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:75]
+ERROR: [VRFC 10-426] cannot find port s_axi_aclk on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:74]
+ERROR: [VRFC 10-426] cannot find port bram_rddata_a on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:73]
+ERROR: [VRFC 10-426] cannot find port s_axi_rvalid on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:72]
+ERROR: [VRFC 10-426] cannot find port s_axi_rready on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:71]
+ERROR: [VRFC 10-426] cannot find port s_axi_rdata on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:70]
+ERROR: [VRFC 10-426] cannot find port s_axi_arvalid on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:69]
+ERROR: [VRFC 10-426] cannot find port s_axi_arready on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:68]
+ERROR: [VRFC 10-426] cannot find port s_axi_araddr on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:67]
+ERROR: [VRFC 10-2063] Module <design_2_axi_bram_ctrl_0_0> not found while processing module instance <axi_bram_ctrl_0> [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.ip_user_files/bd/design_2/sim/design_2.v:128]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 1426.824 ; gain = 0.434
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'AXI_4_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AXI_4_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI4_master.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI4_master
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI_4_top
+"xvhdl --incr --relax -prj AXI_4_top_vhdl.prj"
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1428.102 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '7' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9c750d5e06b442a69a620626f1ad1eb3 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L axi_bram_ctrl_v4_0_14 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot AXI_4_top_behav xil_defaultlib.AXI_4_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-426] cannot find port S_AXI on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:75]
+ERROR: [VRFC 10-426] cannot find port s_axi_aclk on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:74]
+ERROR: [VRFC 10-426] cannot find port bram_rddata_a on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:73]
+ERROR: [VRFC 10-426] cannot find port s_axi_rvalid on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:72]
+ERROR: [VRFC 10-426] cannot find port s_axi_rready on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:71]
+ERROR: [VRFC 10-426] cannot find port s_axi_rdata on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:70]
+ERROR: [VRFC 10-426] cannot find port s_axi_arvalid on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:69]
+ERROR: [VRFC 10-426] cannot find port s_axi_arready on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:68]
+ERROR: [VRFC 10-426] cannot find port s_axi_araddr on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:67]
+ERROR: [VRFC 10-2063] Module <design_2_axi_bram_ctrl_0_0> not found while processing module instance <axi_bram_ctrl_0> [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.ip_user_files/bd/design_2/sim/design_2.v:128]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1428.102 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'AXI_4_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AXI_4_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI4_master.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI4_master
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI_4_top
+"xvhdl --incr --relax -prj AXI_4_top_vhdl.prj"
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1428.102 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '7' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9c750d5e06b442a69a620626f1ad1eb3 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L axi_bram_ctrl_v4_0_14 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot AXI_4_top_behav xil_defaultlib.AXI_4_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-426] cannot find port S_AXI_0 on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:75]
+ERROR: [VRFC 10-426] cannot find port s_axi_aclk on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:74]
+ERROR: [VRFC 10-426] cannot find port bram_rddata_a on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:73]
+ERROR: [VRFC 10-426] cannot find port s_axi_rvalid on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:72]
+ERROR: [VRFC 10-426] cannot find port s_axi_rready on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:71]
+ERROR: [VRFC 10-426] cannot find port s_axi_rdata on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:70]
+ERROR: [VRFC 10-426] cannot find port s_axi_arvalid on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:69]
+ERROR: [VRFC 10-426] cannot find port s_axi_arready on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:68]
+ERROR: [VRFC 10-426] cannot find port s_axi_araddr on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:67]
+ERROR: [VRFC 10-2063] Module <design_2_axi_bram_ctrl_0_0> not found while processing module instance <axi_bram_ctrl_0> [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.ip_user_files/bd/design_2/sim/design_2.v:128]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1428.102 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'AXI_4_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AXI_4_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI4_master.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI4_master
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI_4_top
+"xvhdl --incr --relax -prj AXI_4_top_vhdl.prj"
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1430.562 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '8' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9c750d5e06b442a69a620626f1ad1eb3 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L axi_bram_ctrl_v4_0_14 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot AXI_4_top_behav xil_defaultlib.AXI_4_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-426] cannot find port S_AXI_0 on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:75]
+ERROR: [VRFC 10-426] cannot find port bram_rddata_a on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:73]
+ERROR: [VRFC 10-426] cannot find port s_axi_rvalid on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:72]
+ERROR: [VRFC 10-426] cannot find port s_axi_rready on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:71]
+ERROR: [VRFC 10-426] cannot find port s_axi_rdata on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:70]
+ERROR: [VRFC 10-426] cannot find port s_axi_arvalid on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:69]
+ERROR: [VRFC 10-426] cannot find port s_axi_arready on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:68]
+ERROR: [VRFC 10-426] cannot find port s_axi_araddr on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:67]
+ERROR: [VRFC 10-2063] Module <design_2_axi_bram_ctrl_0_0> not found while processing module instance <axi_bram_ctrl_0> [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.ip_user_files/bd/design_2/sim/design_2.v:128]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 1430.562 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'AXI_4_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AXI_4_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI4_master.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI4_master
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI_4_top
+"xvhdl --incr --relax -prj AXI_4_top_vhdl.prj"
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1430.566 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '7' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9c750d5e06b442a69a620626f1ad1eb3 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L axi_bram_ctrl_v4_0_14 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot AXI_4_top_behav xil_defaultlib.AXI_4_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-426] cannot find port s_axi_0_rready on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:71]
+ERROR: [VRFC 10-426] cannot find port s_axi_0_rdata on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:70]
+ERROR: [VRFC 10-426] cannot find port s_axi_0_arvalid on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:69]
+ERROR: [VRFC 10-426] cannot find port s_axi_0_arready on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:68]
+ERROR: [VRFC 10-426] cannot find port s_axi_0_araddr on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:67]
+ERROR: [VRFC 10-2063] Module <design_2_axi_bram_ctrl_0_0> not found while processing module instance <axi_bram_ctrl_0> [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.ip_user_files/bd/design_2/sim/design_2.v:128]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1430.566 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'AXI_4_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AXI_4_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI4_master.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI4_master
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI_4_top
+"xvhdl --incr --relax -prj AXI_4_top_vhdl.prj"
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1431.242 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '8' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9c750d5e06b442a69a620626f1ad1eb3 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L axi_bram_ctrl_v4_0_14 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot AXI_4_top_behav xil_defaultlib.AXI_4_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-426] cannot find port S_AXI_aresetn_0 on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:78]
+ERROR: [VRFC 10-426] cannot find port S_AXI_aclk_0 on this module [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:77]
+ERROR: [VRFC 10-2063] Module <design_2_axi_bram_ctrl_0_0> not found while processing module instance <axi_bram_ctrl_0> [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.ip_user_files/bd/design_2/sim/design_2.v:128]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 1431.242 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'AXI_4_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AXI_4_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI4_master.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI4_master
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI_4_top
+"xvhdl --incr --relax -prj AXI_4_top_vhdl.prj"
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1431.859 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '7' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9c750d5e06b442a69a620626f1ad1eb3 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L axi_bram_ctrl_v4_0_14 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot AXI_4_top_behav xil_defaultlib.AXI_4_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 15 for port S_AXI_0_araddr [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:67]
+ERROR: [VRFC 10-1546] variable clk might have multiple concurrent drivers [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:82]
+ERROR: [VRFC 10-1546] variable rst might have multiple concurrent drivers [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:87]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1431.859 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 1431.859 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+startgroup
+set_property -dict [list CONFIG.SINGLE_PORT_BRAM {1}] [get_bd_cells axi_bram_ctrl_0]
+endgroup
+save_bd_design
+Wrote  : <C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd> 
+Wrote  : <C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/ui/bd_1fdbff51.ui> 
+generate_target Simulation [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd]
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'NO' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+CRITICAL WARNING: [BD 41-1356] Address block </axi_bram_ctrl_0/S_AXI/Mem0> is not mapped into </S_AXI_0>. Please use Address Editor to either map or exclude it.
+Wrote  : <C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd> 
+VHDL Output written to : C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/synth/design_2.v
+VHDL Output written to : C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/sim/design_2.v
+VHDL Output written to : C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/hdl/design_2_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+Exporting to file C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/hw_handoff/design_2.hwh
+Generated Block Design Tcl file C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/hw_handoff/design_2_bd.tcl
+Generated Hardware Definition File C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/synth/design_2.hwdef
+export_ip_user_files -of_objects [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd] -directory C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.ip_user_files -ipstatic_source_dir C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.cache/compile_simlib/modelsim} {questa=C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.cache/compile_simlib/questa} {riviera=C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.cache/compile_simlib/riviera} {activehdl=C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'AXI_4_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AXI_4_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.ip_user_files/bd/design_2/sim/design_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI4_master.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI4_master
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI_4_top
+"xvhdl --incr --relax -prj AXI_4_top_vhdl.prj"
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1467.102 ; gain = 0.055
+INFO: [USF-XSim-69] 'compile' step finished in '8' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9c750d5e06b442a69a620626f1ad1eb3 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L axi_bram_ctrl_v4_0_14 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot AXI_4_top_behav xil_defaultlib.AXI_4_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 15 for port S_AXI_0_araddr [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:67]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package xpm.vcomponents
+Compiling package axi_bram_ctrl_v4_0_14.axi_bram_ctrl_funcs
+Compiling module xil_defaultlib.AXI4_master
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0_14.axi_lite [\axi_lite(c_s_axi_addr_width=15,...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0_14.axi_bram_ctrl_top [\axi_bram_ctrl_top(c_bram_addr_w...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0_14.axi_bram_ctrl [\axi_bram_ctrl(c_memory_depth=81...]
+Compiling architecture design_2_axi_bram_ctrl_0_0_arch of entity xil_defaultlib.design_2_axi_bram_ctrl_0_0 [design_2_axi_bram_ctrl_0_0_defau...]
+Compiling module xil_defaultlib.design_2
+Compiling module xil_defaultlib.AXI_4_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot AXI_4_top_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim/xsim.dir/AXI_4_top_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Jul 24 14:05:51 2024...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:21 . Memory (MB): peak = 1470.789 ; gain = 3.688
+INFO: [USF-XSim-69] 'elaborate' step finished in '21' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "AXI_4_top_behav -key {Behavioral:sim_1:Functional:AXI_4_top} -tclbatch {AXI_4_top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source AXI_4_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'AXI_4_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:35 . Memory (MB): peak = 1479.168 ; gain = 12.125
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/AXI_4_top/des/S_AXI_0_rdata}} 
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/AXI_4_top/des/S_AXI_0_rready}} 
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/AXI_4_top/des/S_AXI_0_rresp}} 
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/AXI_4_top/des/S_AXI_0_rvalid}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'AXI_4_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AXI_4_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI4_master.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI4_master
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI_4_top
+"xvhdl --incr --relax -prj AXI_4_top_vhdl.prj"
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1495.309 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1495.309 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9c750d5e06b442a69a620626f1ad1eb3 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L axi_bram_ctrl_v4_0_14 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot AXI_4_top_behav xil_defaultlib.AXI_4_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 15 for port S_AXI_0_araddr [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:65]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package xpm.vcomponents
+Compiling package axi_bram_ctrl_v4_0_14.axi_bram_ctrl_funcs
+Compiling module xil_defaultlib.AXI4_master
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0_14.axi_lite [\axi_lite(c_s_axi_addr_width=15,...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0_14.axi_bram_ctrl_top [\axi_bram_ctrl_top(c_bram_addr_w...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0_14.axi_bram_ctrl [\axi_bram_ctrl(c_memory_depth=81...]
+Compiling architecture design_2_axi_bram_ctrl_0_0_arch of entity xil_defaultlib.design_2_axi_bram_ctrl_0_0 [design_2_axi_bram_ctrl_0_0_defau...]
+Compiling module xil_defaultlib.design_2
+Compiling module xil_defaultlib.AXI_4_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot AXI_4_top_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1495.309 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1495.309 ; gain = 0.000
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 1495.309 ; gain = 0.000
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/AXI_4_top/master/m_ARADDR}} 
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/AXI_4_top/master/m_ARVALID}} 
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/AXI_4_top/master/m_ARREADY}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'AXI_4_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AXI_4_top_vlog.prj"
+"xvhdl --incr --relax -prj AXI_4_top_vhdl.prj"
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1495.309 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1495.309 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9c750d5e06b442a69a620626f1ad1eb3 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L axi_bram_ctrl_v4_0_14 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot AXI_4_top_behav xil_defaultlib.AXI_4_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 15 for port S_AXI_0_araddr [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:65]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1495.309 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1495.309 ; gain = 0.000
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 1495.309 ; gain = 0.000
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/AXI_4_top/master/current_state}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'AXI_4_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AXI_4_top_vlog.prj"
+"xvhdl --incr --relax -prj AXI_4_top_vhdl.prj"
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1495.309 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1495.309 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9c750d5e06b442a69a620626f1ad1eb3 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L axi_bram_ctrl_v4_0_14 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot AXI_4_top_behav xil_defaultlib.AXI_4_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 15 for port S_AXI_0_araddr [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:65]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1495.309 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1495.309 ; gain = 0.000
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 1495.309 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'AXI_4_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AXI_4_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI4_master.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI4_master
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI_4_top
+"xvhdl --incr --relax -prj AXI_4_top_vhdl.prj"
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1495.309 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1495.309 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9c750d5e06b442a69a620626f1ad1eb3 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L axi_bram_ctrl_v4_0_14 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot AXI_4_top_behav xil_defaultlib.AXI_4_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 15 for port S_AXI_0_araddr [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:65]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package xpm.vcomponents
+Compiling package axi_bram_ctrl_v4_0_14.axi_bram_ctrl_funcs
+Compiling module xil_defaultlib.AXI4_master
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0_14.axi_lite [\axi_lite(c_s_axi_addr_width=15,...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0_14.axi_bram_ctrl_top [\axi_bram_ctrl_top(c_bram_addr_w...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0_14.axi_bram_ctrl [\axi_bram_ctrl(c_memory_depth=81...]
+Compiling architecture design_2_axi_bram_ctrl_0_0_arch of entity xil_defaultlib.design_2_axi_bram_ctrl_0_0 [design_2_axi_bram_ctrl_0_0_defau...]
+Compiling module xil_defaultlib.design_2
+Compiling module xil_defaultlib.AXI_4_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot AXI_4_top_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1495.309 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1495.309 ; gain = 0.000
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 1495.309 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'AXI_4_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AXI_4_top_vlog.prj"
+"xvhdl --incr --relax -prj AXI_4_top_vhdl.prj"
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1495.309 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1495.309 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9c750d5e06b442a69a620626f1ad1eb3 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L axi_bram_ctrl_v4_0_14 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot AXI_4_top_behav xil_defaultlib.AXI_4_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 15 for port S_AXI_0_araddr [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:65]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 1495.309 ; gain = 0.000
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/AXI_4_top/master/next_state}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'AXI_4_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AXI_4_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI4_master.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI4_master
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI_4_top
+"xvhdl --incr --relax -prj AXI_4_top_vhdl.prj"
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1495.309 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1495.309 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9c750d5e06b442a69a620626f1ad1eb3 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L axi_bram_ctrl_v4_0_14 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot AXI_4_top_behav xil_defaultlib.AXI_4_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 15 for port S_AXI_0_araddr [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:65]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package xpm.vcomponents
+Compiling package axi_bram_ctrl_v4_0_14.axi_bram_ctrl_funcs
+Compiling module xil_defaultlib.AXI4_master
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0_14.axi_lite [\axi_lite(c_s_axi_addr_width=15,...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0_14.axi_bram_ctrl_top [\axi_bram_ctrl_top(c_bram_addr_w...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0_14.axi_bram_ctrl [\axi_bram_ctrl(c_memory_depth=81...]
+Compiling architecture design_2_axi_bram_ctrl_0_0_arch of entity xil_defaultlib.design_2_axi_bram_ctrl_0_0 [design_2_axi_bram_ctrl_0_0_defau...]
+Compiling module xil_defaultlib.design_2
+Compiling module xil_defaultlib.AXI_4_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot AXI_4_top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 1495.309 ; gain = 0.000
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/AXI_4_top/master/m_RREADY}} 
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 1495.309 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'AXI_4_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AXI_4_top_vlog.prj"
+"xvhdl --incr --relax -prj AXI_4_top_vhdl.prj"
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1495.309 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1495.309 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9c750d5e06b442a69a620626f1ad1eb3 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L axi_bram_ctrl_v4_0_14 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot AXI_4_top_behav xil_defaultlib.AXI_4_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 15 for port S_AXI_0_araddr [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:65]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:27 . Memory (MB): peak = 1495.309 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'AXI_4_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AXI_4_top_vlog.prj"
+"xvhdl --incr --relax -prj AXI_4_top_vhdl.prj"
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1495.309 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1495.309 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9c750d5e06b442a69a620626f1ad1eb3 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L axi_bram_ctrl_v4_0_14 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot AXI_4_top_behav xil_defaultlib.AXI_4_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 15 for port S_AXI_0_araddr [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:65]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1495.309 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1495.309 ; gain = 0.000
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 1495.309 ; gain = 0.000
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/AXI_4_top/master/m_RDATA}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'AXI_4_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AXI_4_top_vlog.prj"
+"xvhdl --incr --relax -prj AXI_4_top_vhdl.prj"
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1495.309 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1495.309 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9c750d5e06b442a69a620626f1ad1eb3 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L axi_bram_ctrl_v4_0_14 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot AXI_4_top_behav xil_defaultlib.AXI_4_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 15 for port S_AXI_0_araddr [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:65]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1495.309 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1495.309 ; gain = 0.000
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 1495.309 ; gain = 0.000
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/AXI_4_top/des/S_AXI_0_rdata}} 
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/AXI_4_top/des/BRAM_PORTA_0_dout}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'AXI_4_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AXI_4_top_vlog.prj"
+"xvhdl --incr --relax -prj AXI_4_top_vhdl.prj"
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1495.309 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1495.309 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9c750d5e06b442a69a620626f1ad1eb3 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L axi_bram_ctrl_v4_0_14 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot AXI_4_top_behav xil_defaultlib.AXI_4_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 15 for port S_AXI_0_araddr [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:65]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 1495.309 ; gain = 0.000
+open_bd_design {C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd}
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'AXI_4_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AXI_4_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI4_master.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI4_master
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI_4_top
+"xvhdl --incr --relax -prj AXI_4_top_vhdl.prj"
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1495.309 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '8' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1495.309 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9c750d5e06b442a69a620626f1ad1eb3 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L axi_bram_ctrl_v4_0_14 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot AXI_4_top_behav xil_defaultlib.AXI_4_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 15 for port S_AXI_0_araddr [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:65]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package xpm.vcomponents
+Compiling package axi_bram_ctrl_v4_0_14.axi_bram_ctrl_funcs
+Compiling module xil_defaultlib.AXI4_master
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0_14.axi_lite [\axi_lite(c_s_axi_addr_width=15,...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0_14.axi_bram_ctrl_top [\axi_bram_ctrl_top(c_bram_addr_w...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0_14.axi_bram_ctrl [\axi_bram_ctrl(c_memory_depth=81...]
+Compiling architecture design_2_axi_bram_ctrl_0_0_arch of entity xil_defaultlib.design_2_axi_bram_ctrl_0_0 [design_2_axi_bram_ctrl_0_0_defau...]
+Compiling module xil_defaultlib.design_2
+Compiling module xil_defaultlib.AXI_4_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot AXI_4_top_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1495.309 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1495.309 ; gain = 0.000
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:21 . Memory (MB): peak = 1495.309 ; gain = 0.000
+open_bd_design {C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd}
+update_compile_order -fileset sources_1
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'AXI_4_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AXI_4_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI4_master.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI4_master
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI4_slave.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI4_slave
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI_4_top
+ERROR: [VRFC 10-1412] syntax error near ) [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:79]
+ERROR: [VRFC 10-2787] module AXI_4_top ignored due to previous errors [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:23]
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1496.262 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '7' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1496.262 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'AXI_4_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AXI_4_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI4_master.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI4_master
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI4_slave.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI4_slave
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI_4_top
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1496.262 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9c750d5e06b442a69a620626f1ad1eb3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot AXI_4_top_behav xil_defaultlib.AXI_4_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.AXI4_master
+Compiling module xil_defaultlib.AXI4_slave
+Compiling module xil_defaultlib.AXI_4_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot AXI_4_top_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim/xsim.dir/AXI_4_top_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 53.996 ; gain = 0.664
+INFO: [Common 17-206] Exiting Webtalk at Thu Jul 25 14:07:26 2024...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:24 . Memory (MB): peak = 1496.262 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '24' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:24 . Memory (MB): peak = 1496.262 ; gain = 0.000
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:32 . Memory (MB): peak = 1496.262 ; gain = 0.000
+open_hw
+close_hw
+open_bd_design {C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd}
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1499.035 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'AXI_4_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AXI_4_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI4_master.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI4_master
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI4_slave.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI4_slave
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI_4_top
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1499.035 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1499.035 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9c750d5e06b442a69a620626f1ad1eb3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot AXI_4_top_behav xil_defaultlib.AXI_4_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.AXI4_master
+Compiling module xil_defaultlib.AXI4_slave
+Compiling module xil_defaultlib.AXI_4_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot AXI_4_top_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim/xsim.dir/AXI_4_top_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Jul 26 14:19:46 2024...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:20 . Memory (MB): peak = 1499.035 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '20' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:20 . Memory (MB): peak = 1499.035 ; gain = 0.000
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+ERROR: [Wavedata 42-21] A waveform data source could not be established for the requested wave configuration.
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:41 . Memory (MB): peak = 1499.035 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'AXI_4_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AXI_4_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI4_master.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI4_master
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI4_slave.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI4_slave
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI_4_top
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9c750d5e06b442a69a620626f1ad1eb3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot AXI_4_top_behav xil_defaultlib.AXI_4_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.AXI4_master
+Compiling module xil_defaultlib.AXI4_slave
+Compiling module xil_defaultlib.AXI_4_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot AXI_4_top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+ERROR: [Wavedata 42-21] A waveform data source could not be established for the requested wave configuration.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1499.035 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'AXI_4_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AXI_4_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI4_master.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI4_master
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI_4_top
+"xvhdl --incr --relax -prj AXI_4_top_vhdl.prj"
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1499.035 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1499.035 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9c750d5e06b442a69a620626f1ad1eb3 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L axi_bram_ctrl_v4_0_14 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot AXI_4_top_behav xil_defaultlib.AXI_4_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 15 for port S_AXI_0_araddr [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:65]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package xpm.vcomponents
+Compiling package axi_bram_ctrl_v4_0_14.axi_bram_ctrl_funcs
+Compiling module xil_defaultlib.AXI4_master
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0_14.axi_lite [\axi_lite(c_s_axi_addr_width=15,...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0_14.axi_bram_ctrl_top [\axi_bram_ctrl_top(c_bram_addr_w...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0_14.axi_bram_ctrl [\axi_bram_ctrl(c_memory_depth=81...]
+Compiling architecture design_2_axi_bram_ctrl_0_0_arch of entity xil_defaultlib.design_2_axi_bram_ctrl_0_0 [design_2_axi_bram_ctrl_0_0_defau...]
+Compiling module xil_defaultlib.design_2
+Compiling module xil_defaultlib.AXI_4_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot AXI_4_top_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1499.035 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1499.035 ; gain = 0.000
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+ERROR: [Wavedata 42-21] A waveform data source could not be established for the requested wave configuration.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 1499.035 ; gain = 0.000
+update_compile_order -fileset sources_1
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'AXI_4_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AXI_4_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI4_master.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI4_master
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI_4_top
+"xvhdl --incr --relax -prj AXI_4_top_vhdl.prj"
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1499.035 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1499.035 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9c750d5e06b442a69a620626f1ad1eb3 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L axi_bram_ctrl_v4_0_14 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot AXI_4_top_behav xil_defaultlib.AXI_4_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 15 for port S_AXI_0_araddr [C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/new/AXI_4_top.sv:65]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package xpm.vcomponents
+Compiling package axi_bram_ctrl_v4_0_14.axi_bram_ctrl_funcs
+Compiling module xil_defaultlib.AXI4_master
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0_14.axi_lite [\axi_lite(c_s_axi_addr_width=15,...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0_14.axi_bram_ctrl_top [\axi_bram_ctrl_top(c_bram_addr_w...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0_14.axi_bram_ctrl [\axi_bram_ctrl(c_memory_depth=81...]
+Compiling architecture design_2_axi_bram_ctrl_0_0_arch of entity xil_defaultlib.design_2_axi_bram_ctrl_0_0 [design_2_axi_bram_ctrl_0_0_defau...]
+Compiling module xil_defaultlib.design_2
+Compiling module xil_defaultlib.AXI_4_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot AXI_4_top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps

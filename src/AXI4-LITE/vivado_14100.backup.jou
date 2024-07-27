@@ -1,0 +1,297 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Jul 22 21:06:21 2024
+# Process ID: 14100
+# Current directory: C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17288 C:\Users\Fayz\OneDrive\Desktop\SV_PRACTICE\AXI4-LITE\AXI4-LITE.xpr
+# Log file: C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/vivado.log
+# Journal file: C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE\vivado.jou
+#-----------------------------------------------------------
+start_guopopen_project C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.xpupupdate_compile_order -fileset sources_create_bd_design "design_1"
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_uartlite:2.0 axi_uartlite_0
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_uartlite_0/s_axi_aclk]
+endgroup
+save_bd_design
+launch_simulation
+launch_simulation
+source AXI_4_top.tcl
+create_bd_design "design_2"
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 blk_mem_gen_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_crossbar:2.1 axi_crossbar_0
+endgroup
+delete_bd_objs [get_bd_cells axi_crossbar_0]
+delete_bd_objs [get_bd_cells blk_mem_gen_0]
+open_bd_design {C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+make_bd_pins_external  [get_bd_pins axi_uartlite_0/s_axi_aresetn]
+endgroup
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins axi_uartlite_0/S_AXI]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_bram_ctrl:4.0 axi_bram_ctrl_0
+endgroup
+delete_bd_objs [get_bd_nets s_axi_aclk_0_1] [get_bd_nets s_axi_aresetn_0_1] [get_bd_intf_nets S_AXI_0_1] [get_bd_cells axi_uartlite_0]
+delete_bd_objs [get_bd_intf_ports S_AXI_0]
+delete_bd_objs [get_bd_ports s_axi_aclk_0]
+delete_bd_objs [get_bd_ports s_axi_aresetn_0]
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/s_axi_aclk]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/s_axi_aresetn]
+endgroup
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins axi_bram_ctrl_0/S_AXI]
+endgroup
+generate_target all [get_files  C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd]
+catch { config_ip_cache -export [get_ips -all design_1_axi_bram_ctrl_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 2 design_1_axi_bram_ctrl_0_0_synth_1
+export_simulation -of_objects [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.ip_user_files -ipstatic_source_dir C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.cache/compile_simlib/modelsim} {questa=C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.cache/compile_simlib/questa} {riviera=C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.cache/compile_simlib/riviera} {activehdl=C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd]
+set_property synth_checkpoint_mode None [get_files  C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd]
+generate_target all [get_files  C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.ip_user_files -ipstatic_source_dir C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.cache/compile_simlib/modelsim} {questa=C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.cache/compile_simlib/questa} {riviera=C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.cache/compile_simlib/riviera} {activehdl=C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+group_bd_cells hier_0 [get_bd_cells axi_bram_ctrl_0]
+validate_bd_design
+ungroup_bd_cells [get_bd_cells hier_0]
+startgroup
+set_property -dict [list CONFIG.SINGLE_PORT_BRAM {1}] [get_bd_cells axi_bram_ctrl_0]
+endgroup
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins axi_bram_ctrl_0/BRAM_PORTA]
+endgroup
+validate_bd_design
+generate_target all [get_files  C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.ip_user_files -ipstatic_source_dir C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.cache/compile_simlib/modelsim} {questa=C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.cache/compile_simlib/questa} {riviera=C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.cache/compile_simlib/riviera} {activehdl=C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+open_bd_design {C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd}
+current_bd_design [get_bd_designs design_1]
+startgroup
+set_property -dict [list CONFIG.PROTOCOL {AXI4LITE} CONFIG.ECC_TYPE {0}] [get_bd_cells axi_bram_ctrl_0]
+endgroup
+startgroup
+endgroup
+save_bd_design
+make_wrapper -files [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd] -top
+make_wrapper -files [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd] -top
+startgroup
+endgroup
+startgroup
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/s_axi_wvalid]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/s_axi_wstrb]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/s_axi_wready]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/s_axi_wdata]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/s_axi_rresp]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/s_axi_bvalid]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/s_axi_bresp]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/s_axi_bready]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/s_axi_awaddr]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/s_axi_awprot]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/s_axi_awready]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/s_axi_awvalid]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/s_axi_arprot]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/bram_addr_a]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/bram_clk_a]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/bram_wrdata_a]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/bram_en_a]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/bram_rst_a]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/bram_we_a]
+endgroup
+save_bd_design
+close_sim
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd}
+open_bd_design {C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd}
+open_bd_design {C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd}
+open_bd_design {C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd}
+current_bd_design [get_bd_designs design_1]
+open_bd_design {C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd}
+save_bd_design
+close_bd_design [get_bd_designs design_2]
+generate_target Simulation [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects  [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd] -no_script -reset -force -quiet
+remove_files  C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_1/design_1.bd
+open_bd_design {C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd}
+open_bd_design {C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd}
+open_bd_design {C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd}
+open_bd_design {C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd}
+open_bd_design {C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_bram_ctrl:4.0 axi_bram_ctrl_0
+endgroup
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins axi_bram_ctrl_0/S_AXI]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/s_axi_aclk]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_bram_ctrl_0/s_axi_aresetn]
+endgroup
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins axi_bram_ctrl_0/BRAM_PORTA]
+endgroup
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins axi_bram_ctrl_0/BRAM_PORTB]
+endgroup
+set_property synth_checkpoint_mode None [get_files  C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd]
+generate_target all [get_files  C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd]
+startgroup
+set_property -dict [list CONFIG.PROTOCOL {AXI4LITE} CONFIG.SINGLE_PORT_BRAM {1} CONFIG.ECC_TYPE {0}] [get_bd_cells axi_bram_ctrl_0]
+delete_bd_objs [get_bd_intf_nets axi_bram_ctrl_0_BRAM_PORTB]
+endgroup
+delete_bd_objs [get_bd_intf_ports BRAM_PORTB_0]
+make_wrapper -files [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd] -top
+startgroup
+endgroup
+make_wrapper -files [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd] -top
+generate_target all [get_files  C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd]
+save_bd_design
+generate_target Simulation [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd]
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.READ_WRITE_MODE {READ_ONLY}] [get_bd_intf_ports BRAM_PORTA_0]
+save_bd_design
+generate_target Simulation [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd]
+set_property -dict [list CONFIG.READ_WRITE_MODE {READ_WRITE}] [get_bd_intf_ports BRAM_PORTA_0]
+save_bd_design
+generate_target Simulation [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd]
+save_bd_design
+generate_target Simulation [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd]
+startgroup
+endgroup
+set_property -dict [list CONFIG.ADDR_WIDTH {32}] [get_bd_intf_ports S_AXI_0]
+save_bd_design
+generate_target Simulation [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd]
+save_bd_design
+generate_target Simulation [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd]
+save_bd_design
+generate_target Simulation [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd]
+save_bd_design
+generate_target Simulation [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd]
+save_bd_design
+generate_target Simulation [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd]
+save_bd_design
+set_property -dict [list CONFIG.MAX_BURST_LENGTH {1} CONFIG.SUPPORTS_NARROW_BURST {0} CONFIG.PROTOCOL {AXI4LITE}] [get_bd_intf_ports S_AXI_0]
+save_bd_design
+generate_target Simulation [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd]
+export_ip_user_files -of_objects [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd] -directory C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.ip_user_files -ipstatic_source_dir C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.cache/compile_simlib/modelsim} {questa=C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.cache/compile_simlib/questa} {riviera=C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.cache/compile_simlib/riviera} {activehdl=C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+startgroup
+set_property -dict [list CONFIG.SINGLE_PORT_BRAM {1}] [get_bd_cells axi_bram_ctrl_0]
+endgroup
+save_bd_design
+generate_target Simulation [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd]
+export_ip_user_files -of_objects [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd] -directory C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.ip_user_files -ipstatic_source_dir C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.cache/compile_simlib/modelsim} {questa=C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.cache/compile_simlib/questa} {riviera=C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.cache/compile_simlib/riviera} {activehdl=C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source AXI_4_top.tcl
+current_wave_config {Untitled 2}
+add_wave {{/AXI_4_top/des/S_AXI_0_rdata}} 
+current_wave_config {Untitled 2}
+add_wave {{/AXI_4_top/des/S_AXI_0_rready}} 
+current_wave_config {Untitled 2}
+add_wave {{/AXI_4_top/des/S_AXI_0_rresp}} 
+current_wave_config {Untitled 2}
+add_wave {{/AXI_4_top/des/S_AXI_0_rvalid}} 
+relaunch_sim
+current_wave_config {Untitled 2}
+add_wave {{/AXI_4_top/master/m_ARADDR}} 
+current_wave_config {Untitled 2}
+add_wave {{/AXI_4_top/master/m_ARVALID}} 
+current_wave_config {Untitled 2}
+add_wave {{/AXI_4_top/master/m_ARREADY}} 
+relaunch_sim
+current_wave_config {Untitled 2}
+add_wave {{/AXI_4_top/master/current_state}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 2}
+add_wave {{/AXI_4_top/master/next_state}} 
+relaunch_sim
+current_wave_config {Untitled 2}
+add_wave {{/AXI_4_top/master/m_RREADY}} 
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 2}
+add_wave {{/AXI_4_top/master/m_RDATA}} 
+relaunch_sim
+current_wave_config {Untitled 2}
+add_wave {{/AXI_4_top/des/S_AXI_0_rdata}} 
+current_wave_config {Untitled 2}
+add_wave {{/AXI_4_top/des/BRAM_PORTA_0_dout}} 
+relaunch_sim
+open_bd_design {C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd}
+relaunch_sim
+open_bd_design {C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd}
+update_compile_order -fileset sources_1
+relaunch_sim
+relaunch_sim
+open_hw
+close_hw
+open_bd_design {C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd}
+relaunch_sim
+relaunch_sim
+relaunch_sim
+update_compile_order -fileset sources_1
+relaunch_sim

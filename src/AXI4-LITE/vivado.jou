@@ -1,0 +1,194 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Jul 26 14:24:20 2024
+# Process ID: 15176
+# Current directory: C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17400 C:\Users\Fayz\OneDrive\Desktop\SV_PRACTICE\AXI4-LITE\AXI4-LITE.xpr
+# Log file: C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/vivado.log
+# Journal file: C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source AXI_4_top.tcl
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/master/m_RDATA}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/master/m_RVALID}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/master/m_RREADY}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/master/m_ARADDR}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/master/m_ARVALID}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/master/m_ARREADY}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/master/current_state}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/des/BRAM_PORTA_0_dout}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/des/S_AXI_0_araddr}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/des/S_AXI_0_arvalid}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/des/S_AXI_0_rdata}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/des/S_AXI_0_rvalid}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/des/S_AXI_0_1_ARVALID}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/des/S_AXI_0_1_RVALID}} 
+relaunch_sim
+open_bd_design {C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd}
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/des/BRAM_PORTA_0_addr}} 
+relaunch_sim
+open_bd_design {C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd}
+startgroup
+set_property -dict [list CONFIG.PROTOCOL {AXI4LITE}] [get_bd_cells axi_bram_ctrl_0]
+endgroup
+set_property -dict [list CONFIG.ADDR_WIDTH {16}] [get_bd_intf_ports S_AXI_0]
+set_property -dict [list CONFIG.ADDR_WIDTH {32}] [get_bd_intf_ports S_AXI_0]
+relaunch_sim
+relaunch_sim
+open_bd_design {C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd}
+exclude_bd_addr_seg [get_bd_addr_segs axi_bram_ctrl_0/S_AXI/Mem0] -target_address_space [get_bd_addr_spaces S_AXI_0]
+relaunch_sim
+relaunch_sim
+open_bd_design {C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd}
+open_bd_design {C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd}
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/des/S_AXI_0_rready}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/master/data_in}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/master/m_AWADDR}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/master/m_AWVALID}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/master/m_AWREADY}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/master/m_WDATA}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/master/m_WVALID}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/master/m_WREADY}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/master/m_BRESP}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/master/m_BVALID}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/master/m_BREADY}} 
+relaunch_sim
+relaunch_sim
+open_bd_design {C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd}
+relaunch_sim
+open_bd_design {C:/Users/Fayz/OneDrive/Desktop/SV_PRACTICE/AXI4-LITE/AXI4-LITE.srcs/sources_1/bd/design_2/design_2.bd}
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/des/S_AXI_0_awaddr}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/des/S_AXI_0_awready}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/des/S_AXI_0_awvalid}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/des/S_AXI_0_bready}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/des/S_AXI_0_bresp}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/des/S_AXI_0_bvalid}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/des/S_AXI_0_wdata}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/des/S_AXI_0_wready}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/des/S_AXI_0_wvalid}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/des/BRAM_PORTA_0_din}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/des/BRAM_PORTA_0_addr}} 
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/wrt_en}} 
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/data_in}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/master/wrt_en}} 
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/master/next_state}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/master/m_ARADDR}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/master/m_ARVALID}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/master/m_ARREADY}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/master/m_RDATA}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/master/m_RVALID}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/master/m_RREADY}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/des/BRAM_PORTA_0_dout}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/des/S_AXI_0_araddr}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/des/S_AXI_0_arready}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/des/S_AXI_0_arvalid}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/des/S_AXI_0_rdata}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/des/S_AXI_0_rready}} 
+current_wave_config {Untitled 1}
+add_wave {{/AXI_4_top/des/S_AXI_0_rvalid}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim

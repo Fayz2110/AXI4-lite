@@ -1,0 +1,55 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 non-TLS
+#  -string -flagsOSRD
+preplace port bram_rst_a_0 -pg 1 -y 190 -defaultsOSRD
+preplace port bram_clk_a_0 -pg 1 -y 110 -defaultsOSRD
+preplace port s_axi_aclk_0 -pg 1 -y 10 -defaultsOSRD
+preplace port s_axi_aresetn_0 -pg 1 -y 410 -defaultsOSRD
+preplace port s_axi_bready_0 -pg 1 -y 170 -defaultsOSRD
+preplace port BRAM_PORTA_0 -pg 1 -y 10 -defaultsOSRD
+preplace port s_axi_awvalid_0 -pg 1 -y 150 -defaultsOSRD
+preplace port s_axi_wready_0 -pg 1 -y 330 -defaultsOSRD
+preplace port s_axi_awready_0 -pg 1 -y 350 -defaultsOSRD
+preplace port s_axi_bvalid_0 -pg 1 -y 390 -defaultsOSRD
+preplace port bram_en_a_0 -pg 1 -y 170 -defaultsOSRD
+preplace port s_axi_wvalid_0 -pg 1 -y 370 -defaultsOSRD
+preplace port S_AXI_0 -pg 1 -y -10 -defaultsOSRD
+preplace portBus s_axi_bresp_0 -pg 1 -y 370 -defaultsOSRD
+preplace portBus s_axi_wstrb_0 -pg 1 -y 350 -defaultsOSRD
+preplace portBus bram_we_a_0 -pg 1 -y 210 -defaultsOSRD
+preplace portBus s_axi_arprot_0 -pg 1 -y 30 -defaultsOSRD
+preplace portBus s_axi_awaddr_0 -pg 1 -y 90 -defaultsOSRD
+preplace portBus s_axi_wdata_0 -pg 1 -y 310 -defaultsOSRD
+preplace portBus s_axi_awprot_0 -pg 1 -y 110 -defaultsOSRD
+preplace portBus bram_addr_a_0 -pg 1 -y 90 -defaultsOSRD
+preplace portBus bram_wrdata_a_0 -pg 1 -y 130 -defaultsOSRD
+preplace portBus s_axi_rresp_0 -pg 1 -y 270 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 1 -y 140 -defaultsOSRD
+preplace netloc axi_bram_ctrl_0_bram_clk_a 1 1 1 N
+preplace netloc axi_bram_ctrl_0_bram_addr_a 1 1 1 N
+preplace netloc s_axi_wstrb_0_1 1 0 1 -320
+preplace netloc axi_bram_ctrl_0_s_axi_wready 1 0 2 -240 360 130J
+preplace netloc s_axi_aclk_0_1 1 0 1 -340
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 1 1 120J
+preplace netloc s_axi_awprot_0_1 1 0 1 -310
+preplace netloc s_axi_bready_0_1 1 0 1 -290
+preplace netloc s_axi_arprot_0_1 1 0 1 -330
+preplace netloc axi_bram_ctrl_0_s_axi_awready 1 0 2 -260 350 NJ
+preplace netloc axi_bram_ctrl_0_bram_rst_a 1 1 1 N
+preplace netloc axi_bram_ctrl_0_bram_wrdata_a 1 1 1 N
+preplace netloc s_axi_awvalid_0_1 1 0 1 -300
+preplace netloc axi_bram_ctrl_0_s_axi_bresp 1 0 2 -270 370 NJ
+preplace netloc s_axi_aresetn_0_1 1 0 1 -290
+preplace netloc S_AXI_0_1 1 0 1 N
+preplace netloc axi_bram_ctrl_0_bram_we_a 1 1 1 N
+preplace netloc s_axi_wvalid_0_1 1 0 1 -310
+preplace netloc s_axi_awaddr_0_1 1 0 1 -320
+preplace netloc axi_bram_ctrl_0_bram_en_a 1 1 1 N
+preplace netloc axi_bram_ctrl_0_s_axi_bvalid 1 0 2 -280 390 NJ
+preplace netloc axi_bram_ctrl_0_s_axi_rresp 1 0 2 -250 380 120J
+preplace netloc s_axi_wdata_0_1 1 0 1 -330
+levelinfo -pg 1 -360 -60 190 -top -70 -bot 710
+",
+}
+
